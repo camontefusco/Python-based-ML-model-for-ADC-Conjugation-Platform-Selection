@@ -1,0 +1,49 @@
+Technology_Category,Platform,Vendor,DAR_Mean,DAR_Std,DAR_CV,Homogeneity,Stability_Score,Expression_Ease,Cost_Index,CMC_Risk,Scalability,Latency_to_Clinic_yrs,Approved_Usage
+Random,Lysine-Based,Generic,4.2,0.15,0.04,0.27,0.74,0.74,0.32,Medium,0.95,4.95,"Adcetris, Kadcyla"
+Random,Lysine-Based,Generic,3.89,0.17,0.04,0.42,0.71,0.24,0.87,Low,0.88,4.36,"Adcetris, Kadcyla"
+Random,Lysine-Based,Generic,4.03,0.24,0.06,0.39,0.81,0.74,0.37,Medium,0.9,5.75,"Adcetris, Kadcyla"
+Random,Lysine-Based,Generic,3.73,0.15,0.04,0.39,0.62,0.53,0.51,Medium,0.91,2.2,"Adcetris, Kadcyla"
+Random,Lysine-Based,Generic,3.93,0.36,0.09,0.48,0.73,0.67,0.37,High,0.91,4.27,"Adcetris, Kadcyla"
+Random,Lysine-Based,Generic,3.75,0.22,0.06,0.5,0.73,0.66,0.43,Medium,0.9,7.24,"Adcetris, Kadcyla"
+Random,Lysine-Based,Generic,3.92,0.29,0.07,0.46,0.73,0.7,0.42,High,0.95,6.24,"Adcetris, Kadcyla"
+Random,Lysine-Based,Generic,3.58,0.32,0.09,0.27,0.65,0.63,0.48,Medium,0.85,5.81,"Adcetris, Kadcyla"
+Site-Specific Non-Selective,Interchain Cysteine,Genentech,2.78,0.11,0.04,0.63,0.77,0.44,0.63,High,0.72,4.34,SGN-CD33A
+Site-Specific Non-Selective,Interchain Cysteine,Genentech,3.18,0.18,0.06,0.61,0.68,0.5,0.6,High,0.78,1.81,SGN-CD33A
+Site-Specific Non-Selective,Interchain Cysteine,Genentech,2.21,0.19,0.09,0.65,0.69,0.58,0.44,Medium,0.64,2.81,SGN-CD33A
+Site-Specific Non-Selective,Interchain Cysteine,Genentech,2.93,0.35,0.12,0.71,0.81,0.49,0.52,High,0.65,1.14,SGN-CD33A
+Site-Specific Non-Selective,Interchain Cysteine,Genentech,2.47,0.24,0.1,0.72,0.73,0.2,0.82,High,0.76,1.56,SGN-CD33A
+Site-Specific Non-Selective,Interchain Cysteine,Genentech,3.38,0.14,0.04,0.71,0.8,0.5,0.52,High,0.78,3.0,SGN-CD33A
+Site-Specific Non-Selective,Interchain Cysteine,Genentech,3.38,0.08,0.02,0.69,0.65,0.54,0.47,High,0.69,2.6,SGN-CD33A
+Site-Specific Non-Selective,Interchain Cysteine,Genentech,2.8,0.21,0.07,0.75,0.79,0.24,0.84,High,0.65,3.0,SGN-CD33A
+Site-Specific Non-Selective,GlycoConnect™,Synaffix,2.43,0.16,0.07,0.83,0.64,0.7,0.36,Medium,0.63,3.17,None
+Site-Specific Non-Selective,GlycoConnect™,Synaffix,2.81,0.25,0.09,0.72,0.75,0.81,0.26,Medium,0.73,2.29,None
+Site-Specific Non-Selective,GlycoConnect™,Synaffix,2.8,0.08,0.03,0.87,0.93,0.88,0.16,Medium,0.63,1.47,None
+Site-Specific Non-Selective,GlycoConnect™,Synaffix,2.3,0.12,0.05,0.86,0.79,0.81,0.24,Medium,0.78,2.31,None
+Site-Specific Non-Selective,GlycoConnect™,Synaffix,2.36,0.3,0.13,0.78,0.77,0.22,0.82,Medium,0.72,2.59,None
+Site-Specific Non-Selective,GlycoConnect™,Synaffix,2.3,0.24,0.1,0.71,0.76,0.95,0.12,High,0.53,3.97,None
+Site-Specific Non-Selective,GlycoConnect™,Synaffix,2.73,0.07,0.03,0.86,0.81,0.52,0.51,Low,0.64,3.86,None
+Site-Specific Non-Selective,GlycoConnect™,Synaffix,2.46,0.35,0.14,0.74,0.7,0.94,0.12,Low,0.78,2.37,None
+Site-Specific Selective,THIOMAB™,Genentech,2.23,0.23,0.1,0.89,0.62,0.38,0.66,High,0.56,2.18,Polivy
+Site-Specific Selective,THIOMAB™,Genentech,2.02,0.16,0.08,0.98,0.82,0.67,0.38,Low,0.6,2.29,Polivy
+Site-Specific Selective,THIOMAB™,Genentech,2.05,0.21,0.1,0.98,0.74,0.8,0.23,Medium,0.49,3.11,Polivy
+Site-Specific Selective,THIOMAB™,Genentech,2.21,0.12,0.05,0.98,0.86,0.85,0.17,Low,0.6,2.5,Polivy
+Site-Specific Selective,THIOMAB™,Genentech,2.19,0.12,0.05,0.86,0.69,0.43,0.56,Low,0.47,3.35,Polivy
+Site-Specific Selective,THIOMAB™,Genentech,2.18,0.24,0.11,0.87,0.84,0.42,0.62,Low,0.58,2.57,Polivy
+Site-Specific Selective,THIOMAB™,Genentech,2.06,0.32,0.16,0.86,0.88,0.93,0.14,Medium,0.59,3.19,Polivy
+Site-Specific Selective,THIOMAB™,Genentech,2.44,0.17,0.07,0.97,0.66,0.91,0.15,Low,0.42,2.78,Polivy
+Site-Specific Selective,DXd Linker-Payload,Daiichi Sankyo,3.01,0.3,0.1,0.88,0.63,0.37,0.67,Medium,0.61,3.39,Enhertu
+Site-Specific Selective,DXd Linker-Payload,Daiichi Sankyo,3.18,0.25,0.08,0.95,0.72,0.51,0.57,Medium,0.62,2.42,Enhertu
+Site-Specific Selective,DXd Linker-Payload,Daiichi Sankyo,3.44,0.23,0.07,0.88,0.79,0.9,0.08,Low,0.67,1.23,Enhertu
+Site-Specific Selective,DXd Linker-Payload,Daiichi Sankyo,3.74,0.29,0.08,0.98,0.84,0.81,0.19,Medium,0.58,1.17,Enhertu
+Site-Specific Selective,DXd Linker-Payload,Daiichi Sankyo,3.3,0.13,0.04,0.98,0.96,0.46,0.53,Low,0.54,3.32,Enhertu
+Site-Specific Selective,DXd Linker-Payload,Daiichi Sankyo,3.26,0.36,0.11,0.97,0.88,0.92,0.07,Low,0.52,2.04,Enhertu
+Site-Specific Selective,DXd Linker-Payload,Daiichi Sankyo,3.12,0.08,0.03,0.95,0.75,0.62,0.45,Low,0.54,1.49,Enhertu
+Site-Specific Selective,DXd Linker-Payload,Daiichi Sankyo,3.59,0.25,0.07,0.92,0.82,0.72,0.34,Medium,0.55,3.32,Enhertu
+Site-Specific Selective,WuXiDAR4™,WuXi XDC,3.87,0.12,0.03,0.99,0.79,0.78,0.24,Medium,0.89,1.34,None
+Site-Specific Selective,WuXiDAR4™,WuXi XDC,3.86,0.29,0.08,0.96,0.79,0.81,0.23,Low,0.89,1.83,None
+Site-Specific Selective,WuXiDAR4™,WuXi XDC,3.56,0.18,0.05,0.96,0.77,0.36,0.68,Medium,0.76,3.69,None
+Site-Specific Selective,WuXiDAR4™,WuXi XDC,3.59,0.37,0.1,0.95,0.88,0.56,0.47,Low,0.71,2.44,None
+Site-Specific Selective,WuXiDAR4™,WuXi XDC,3.97,0.27,0.07,0.97,0.84,0.35,0.68,Low,0.87,1.45,None
+Site-Specific Selective,WuXiDAR4™,WuXi XDC,3.58,0.38,0.11,0.99,0.73,0.93,0.12,Low,0.83,2.68,None
+Site-Specific Selective,WuXiDAR4™,WuXi XDC,3.55,0.08,0.02,0.96,0.71,0.5,0.56,Low,0.79,1.68,None
+Site-Specific Selective,WuXiDAR4™,WuXi XDC,3.62,0.35,0.1,0.96,0.61,0.89,0.14,Low,0.8,3.18,None
