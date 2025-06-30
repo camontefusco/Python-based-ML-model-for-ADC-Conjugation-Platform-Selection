@@ -117,24 +117,13 @@ Run `synthetic_data_generator.ipynb` to:
 
 ---
 
-## Installation
-
-Make sure you have the following installed:
-
-- Python 3.8+  
-- Jupyter Notebook  
-- Required Python packages:
-
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn plotly gradio pdfkit jinja2
-```
 ## Technologies Used
-Python (pandas, numpy, scikit-learn)
-Jupyter Notebooks
-Plotly, Seaborn, Matplotlib for visualization
-Gradio for interactive UI
-pdfkit + wkhtmltopdf for report generation
-Jinja2 templating
+- Python (pandas, numpy, scikit-learn)
+- Jupyter Notebooks
+- Plotly, Seaborn, Matplotlib for visualization
+- Gradio for interactive UI
+- pdfkit + wkhtmltopdf for report generation
+- Jinja2 templating
 
 ## Contributing
 Contributions are welcome! Please open issues or submit pull requests for improvements, new features, or bug fixes.
