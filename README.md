@@ -3,8 +3,6 @@ A curated guide and decision-support tool to aid scientists in selecting optimal
 
 # ADC Conjugation Technology Evaluation
 
-![ADC](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Antibody.svg/1200px-Antibody.svg.png)
-
 ## Overview
 
 This project evaluates Antibody-Drug Conjugate (ADC) conjugation technologies using synthetic and real-world datasets. The goal is to explore, analyze, and model ADC conjugation platforms to support informed technology selection and recommendation for ADC development.
@@ -137,7 +135,7 @@ Jinja2 templating
 ## Contributing
 Contributions are welcome! Please open issues or submit pull requests for improvements, new features, or bug fixes.
 
-##Contact
+## Contact
 For questions or collaboration, please contact:
 Carlos Montefusco – cmontefusco@gmail.com
 Project Link: https://github.com/camontefusco/adc-conjugation-evaluation
