@@ -1,0 +1,21 @@
+name,platform_category,dar_mean,dar_cv,stability_score,homogeneity_score,manufacturability,approved_status,outside_training_range,model_DAR_Mean,model_DAR_CV,model_Stability_Score,model_Homogeneity,model_Scalability,rf_predicted_category,rf_max_probability,rf_concordant
+Gemtuzumab ozogamicin (Mylotarg),Random,2.5,0.45,2,2,3,Approved,True,2.5,0.45,0.4,0.4,0.6,Site-Specific Non-Selective,0.41,False
+Brentuximab vedotin (Adcetris),Site-Specific Non-Selective,4.0,0.28,3,3,4,Approved,True,4.0,0.28,0.6,0.6,0.8,Site-Specific Non-Selective,0.45,True
+Ado-trastuzumab emtansine (Kadcyla / T-DM1),Random,3.5,0.38,3,2,3,Approved,True,3.5,0.38,0.6,0.4,0.6,Random,0.448,True
+Inotuzumab ozogamicin (Besponsa),Random,6.0,0.5,2,2,3,Approved,True,6.0,0.5,0.4,0.4,0.6,Random,0.56,True
+Polatuzumab vedotin (Polivy),Site-Specific Non-Selective,3.5,0.3,3,3,4,Approved,True,3.5,0.3,0.6,0.6,0.8,Site-Specific Non-Selective,0.568,True
+Enfortumab vedotin (Padcev),Site-Specific Non-Selective,3.8,0.29,3,3,4,Approved,True,3.8,0.29,0.6,0.6,0.8,Site-Specific Non-Selective,0.464,True
+Sacituzumab govitecan (Trodelvy),Random,7.6,0.42,2,2,3,Approved,True,7.6,0.42,0.4,0.4,0.6,Random,0.56,True
+Belantamab mafodotin (Blenrep),Site-Specific Non-Selective,4.0,0.32,4,3,4,Approved,True,4.0,0.32,0.8,0.6,0.8,Site-Specific Non-Selective,0.46,True
+Trastuzumab deruxtecan (Enhertu / T-DXd),Site-Specific Non-Selective,8.0,0.15,4,4,4,Approved,True,8.0,0.15,0.8,0.8,0.8,Site-Specific Selective,0.458,False
+Loncastuximab tesirine (Zynlonta),Site-Specific Non-Selective,2.3,0.35,3,3,3,Approved,True,2.3,0.35,0.6,0.6,0.6,Site-Specific Non-Selective,0.686,True
+Tisotumab vedotin (Tivdak),Site-Specific Non-Selective,4.0,0.28,3,3,4,Approved,True,4.0,0.28,0.6,0.6,0.8,Site-Specific Non-Selective,0.45,True
+Mirvetuximab soravtansine (Elahere),Random,3.6,0.4,3,2,3,Approved,True,3.6,0.4,0.6,0.4,0.6,Random,0.526,True
+Datopotamab deruxtecan (Dato-DXd),Site-Specific Non-Selective,4.0,0.18,4,4,4,Approved,True,4.0,0.18,0.8,0.8,0.8,Site-Specific Selective,0.458,False
+Patritumab deruxtecan (HER3-DXd),Site-Specific Non-Selective,8.0,0.16,4,4,4,Approved,True,8.0,0.16,0.8,0.8,0.8,Site-Specific Selective,0.458,False
+Telisotuzumab vedotin (Teliso-V),Site-Specific Non-Selective,3.1,0.3,3,3,4,Approved,True,3.1,0.3,0.6,0.6,0.8,Site-Specific Non-Selective,0.83,True
+Zilovertamab vedotin (ZV),Site-Specific Non-Selective,4.0,0.3,3,3,4,Phase 3,True,4.0,0.3,0.6,0.6,0.8,Site-Specific Non-Selective,0.45,True
+Upifitamab rilsodotin (UpRi),Site-Specific Selective,2.0,0.08,5,5,3,Phase 3,True,2.0,0.08,1.0,1.0,0.6,Site-Specific Selective,0.946,True
+SGN-B6A (ladiratuzumab vedotin variant),Site-Specific Non-Selective,3.5,0.28,3,3,4,Phase 2,True,3.5,0.28,0.6,0.6,0.8,Site-Specific Non-Selective,0.568,True
+ADCT-601 (camidanlumab tesirine / Cami-T),Site-Specific Non-Selective,2.3,0.33,3,3,3,Phase 2,True,2.3,0.33,0.6,0.6,0.6,Site-Specific Non-Selective,0.686,True
+XMT-1592 (upifitamab rilsodotin precursor),Site-Specific Selective,10.0,0.1,5,5,3,Phase 2,True,10.0,0.1,1.0,1.0,0.6,Site-Specific Selective,0.936,True

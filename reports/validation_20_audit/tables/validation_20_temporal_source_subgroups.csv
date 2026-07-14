@@ -1,0 +1,49 @@
+feature_set,model,grouping,group,correct,total,concordance,wilson_95_low,wilson_95_high
+objective,Logistic regression,temporal_cohort,2021_to_2022,0,5,0.0,0.0,0.43448246478317476
+objective,Logistic regression,temporal_cohort,2023_or_later,0,5,0.0,0.0,0.43448246478317476
+objective,Logistic regression,temporal_cohort,through_2020,2,10,0.2,0.056682151454375274,0.5098375284633583
+objective,Logistic regression,source_group,clinical_publication,0,6,0.0,0.0,0.3903342879021653
+objective,Logistic regression,source_group,regulatory_plus_publication,2,14,0.14285714285714285,0.040093921271464966,0.39941379496970353
+objective,Logistic regression,platform_category,Random,2,5,0.4,0.11762077423264794,0.769275718723987
+objective,Logistic regression,platform_category,Site-Specific Non-Selective,0,13,0.0,0.0,0.22809537235419838
+objective,Logistic regression,platform_category,Site-Specific Selective,0,2,0.0,0.0,0.6576197724933469
+objective,Random Forest,temporal_cohort,2021_to_2022,2,5,0.4,0.11762077423264794,0.769275718723987
+objective,Random Forest,temporal_cohort,2023_or_later,1,5,0.2,0.036224108632430196,0.6244653702374747
+objective,Random Forest,temporal_cohort,through_2020,1,10,0.1,0.017876213095072896,0.4041500267952385
+objective,Random Forest,source_group,clinical_publication,3,6,0.5,0.18761630648265054,0.8123836935173494
+objective,Random Forest,source_group,regulatory_plus_publication,1,14,0.07142857142857142,0.012722215247890939,0.31468704424151117
+objective,Random Forest,platform_category,Random,0,5,0.0,0.0,0.43448246478317476
+objective,Random Forest,platform_category,Site-Specific Non-Selective,2,13,0.15384615384615385,0.04325817835808121,0.4223463101948254
+objective,Random Forest,platform_category,Site-Specific Selective,2,2,1.0,0.34238022750665303,1.0
+objective,Extra Trees,temporal_cohort,2021_to_2022,0,5,0.0,0.0,0.43448246478317476
+objective,Extra Trees,temporal_cohort,2023_or_later,1,5,0.2,0.036224108632430196,0.6244653702374747
+objective,Extra Trees,temporal_cohort,through_2020,0,10,0.0,0.0,0.27753279986288926
+objective,Extra Trees,source_group,clinical_publication,1,6,0.16666666666666666,0.03005336974830669,0.5635028221864702
+objective,Extra Trees,source_group,regulatory_plus_publication,0,14,0.0,0.0,0.2153108027376358
+objective,Extra Trees,platform_category,Random,0,5,0.0,0.0,0.43448246478317476
+objective,Extra Trees,platform_category,Site-Specific Non-Selective,0,13,0.0,0.0,0.22809537235419838
+objective,Extra Trees,platform_category,Site-Specific Selective,1,2,0.5,0.09453120573423074,0.9054687942657693
+harmonized,Logistic regression,temporal_cohort,2021_to_2022,1,5,0.2,0.036224108632430196,0.6244653702374747
+harmonized,Logistic regression,temporal_cohort,2023_or_later,1,5,0.2,0.036224108632430196,0.6244653702374747
+harmonized,Logistic regression,temporal_cohort,through_2020,5,10,0.5,0.236593090512564,0.7634069094874361
+harmonized,Logistic regression,source_group,clinical_publication,2,6,0.3333333333333333,0.09677141110578047,0.700006684861608
+harmonized,Logistic regression,source_group,regulatory_plus_publication,5,14,0.35714285714285715,0.16344731753554131,0.612355768960926
+harmonized,Logistic regression,platform_category,Random,5,5,1.0,0.5655175352168251,1.0
+harmonized,Logistic regression,platform_category,Site-Specific Non-Selective,0,13,0.0,0.0,0.22809537235419838
+harmonized,Logistic regression,platform_category,Site-Specific Selective,2,2,1.0,0.34238022750665303,1.0
+harmonized,Random Forest,temporal_cohort,2021_to_2022,5,5,1.0,0.5655175352168251,1.0
+harmonized,Random Forest,temporal_cohort,2023_or_later,3,5,0.6,0.23072428127601297,0.8823792257673521
+harmonized,Random Forest,temporal_cohort,through_2020,8,10,0.8,0.4901624715366418,0.9433178485456248
+harmonized,Random Forest,source_group,clinical_publication,5,6,0.8333333333333334,0.43649717781352976,0.9699466302516933
+harmonized,Random Forest,source_group,regulatory_plus_publication,11,14,0.7857142857142857,0.524107694133997,0.9242861328730683
+harmonized,Random Forest,platform_category,Random,4,5,0.8,0.3755346297625253,0.9637758913675698
+harmonized,Random Forest,platform_category,Site-Specific Non-Selective,10,13,0.7692307692307693,0.497436240532725,0.9182047128150144
+harmonized,Random Forest,platform_category,Site-Specific Selective,2,2,1.0,0.34238022750665303,1.0
+harmonized,Extra Trees,temporal_cohort,2021_to_2022,5,5,1.0,0.5655175352168251,1.0
+harmonized,Extra Trees,temporal_cohort,2023_or_later,3,5,0.6,0.23072428127601297,0.8823792257673521
+harmonized,Extra Trees,temporal_cohort,through_2020,8,10,0.8,0.4901624715366418,0.9433178485456248
+harmonized,Extra Trees,source_group,clinical_publication,5,6,0.8333333333333334,0.43649717781352976,0.9699466302516933
+harmonized,Extra Trees,source_group,regulatory_plus_publication,11,14,0.7857142857142857,0.524107694133997,0.9242861328730683
+harmonized,Extra Trees,platform_category,Random,4,5,0.8,0.3755346297625253,0.9637758913675698
+harmonized,Extra Trees,platform_category,Site-Specific Non-Selective,10,13,0.7692307692307693,0.497436240532725,0.9182047128150144
+harmonized,Extra Trees,platform_category,Site-Specific Selective,2,2,1.0,0.34238022750665303,1.0

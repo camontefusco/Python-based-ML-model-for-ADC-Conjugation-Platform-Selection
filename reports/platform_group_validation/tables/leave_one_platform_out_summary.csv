@@ -1,0 +1,4 @@
+model,all_fold_accuracy,all_fold_accuracy_sd,folds,representable_fold_accuracy,representable_fold_accuracy_sd,representable_folds
+Extra Trees,0.5625,0.4524240267713464,6,0.675,0.4011701633970303,5
+Logistic regression,0.4166666666666667,0.44487826050130463,6,0.5,0.4419417382415922,5
+Random Forest,0.6041666666666666,0.36586085697525317,6,0.725,0.24044230077089182,5

@@ -1,0 +1,132 @@
+{
+  "training_records": 48,
+  "platforms": 6,
+  "holdout": {
+    "n_test": 10.0,
+    "correct": 10.0,
+    "accuracy": 1.0,
+    "wilson_95_low": 0.7224672001371109,
+    "wilson_95_high": 1.0,
+    "macro_f1": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "permutation": {
+    "observed_cv_accuracy": 0.8333333333333334,
+    "permutation_p_value": 0.009900990099009901
+  },
+  "repeated_cv": [
+    {
+      "Feature set": "Full (9 features)",
+      "Number of features": 9,
+      "accuracy_mean": 0.8458333333333332,
+      "accuracy_sd": 0.07905694150420949,
+      "accuracy_empirical_95_low": 0.7479166666666667,
+      "accuracy_empirical_95_high": 1.0,
+      "balanced_accuracy_mean": 0.8458333333333332,
+      "balanced_accuracy_sd": 0.07905694150420949,
+      "balanced_accuracy_empirical_95_low": 0.7479166666666667,
+      "balanced_accuracy_empirical_95_high": 1.0,
+      "macro_f1_mean": 0.8270833333333334,
+      "macro_f1_sd": 0.09264830944723959,
+      "macro_f1_empirical_95_low": 0.6766666666666669,
+      "macro_f1_empirical_95_high": 1.0
+    },
+    {
+      "Feature set": "Cost_Index removed (8 features)",
+      "Number of features": 8,
+      "accuracy_mean": 0.8291666666666668,
+      "accuracy_sd": 0.07296625298090942,
+      "accuracy_empirical_95_low": 0.6666666666666666,
+      "accuracy_empirical_95_high": 0.9187499999999998,
+      "balanced_accuracy_mean": 0.8291666666666668,
+      "balanced_accuracy_sd": 0.07296625298090942,
+      "balanced_accuracy_empirical_95_low": 0.6666666666666666,
+      "balanced_accuracy_empirical_95_high": 0.9187499999999998,
+      "macro_f1_mean": 0.8080555555555555,
+      "macro_f1_sd": 0.08462858540441891,
+      "macro_f1_empirical_95_low": 0.6605555555555556,
+      "macro_f1_empirical_95_high": 0.9133333333333332
+    },
+    {
+      "Feature set": "Cost_Index and DAR_Std removed (7 features)",
+      "Number of features": 7,
+      "accuracy_mean": 0.8333333333333333,
+      "accuracy_sd": 0.08439494725697222,
+      "accuracy_empirical_95_low": 0.6666666666666666,
+      "accuracy_empirical_95_high": 1.0,
+      "balanced_accuracy_mean": 0.8333333333333333,
+      "balanced_accuracy_sd": 0.08439494725697222,
+      "balanced_accuracy_empirical_95_low": 0.6666666666666666,
+      "balanced_accuracy_empirical_95_high": 1.0,
+      "macro_f1_mean": 0.8098809523809523,
+      "macro_f1_sd": 0.10203765249535042,
+      "macro_f1_empirical_95_low": 0.631547619047619,
+      "macro_f1_empirical_95_high": 1.0
+    }
+  ],
+  "external_validation": [
+    {
+      "Platform category": "Overall",
+      "Correct": 16,
+      "Total": 20,
+      "Concordance": 0.8,
+      "Wilson 95% low": 0.5839825677481065,
+      "Wilson 95% high": 0.9193423374202021
+    },
+    {
+      "Platform category": "Random",
+      "Correct": 4,
+      "Total": 5,
+      "Concordance": 0.8,
+      "Wilson 95% low": 0.3755346297625253,
+      "Wilson 95% high": 0.9637758913675698
+    },
+    {
+      "Platform category": "Site-Specific Non-Selective",
+      "Correct": 10,
+      "Total": 13,
+      "Concordance": 0.7692307692307693,
+      "Wilson 95% low": 0.497436240532725,
+      "Wilson 95% high": 0.9182047128150144
+    },
+    {
+      "Platform category": "Site-Specific Selective",
+      "Correct": 2,
+      "Total": 2,
+      "Concordance": 1.0,
+      "Wilson 95% low": 0.34238022750665303,
+      "Wilson 95% high": 1.0
+    }
+  ],
+  "external_records_outside_any_training_range": 20,
+  "reduced_model_importance": [
+    {
+      "feature": "Homogeneity",
+      "mdi_importance": 0.24351408621530563
+    },
+    {
+      "feature": "DAR_Mean",
+      "mdi_importance": 0.2427656768327457
+    },
+    {
+      "feature": "Scalability",
+      "mdi_importance": 0.21300617491321705
+    },
+    {
+      "feature": "Latency_to_Clinic_yrs",
+      "mdi_importance": 0.11472931940550772
+    },
+    {
+      "feature": "Expression_Ease",
+      "mdi_importance": 0.08780862756877583
+    },
+    {
+      "feature": "Stability_Score",
+      "mdi_importance": 0.05665255468479273
+    },
+    {
+      "feature": "DAR_CV",
+      "mdi_importance": 0.04152356037965535
+    }
+  ]
+}

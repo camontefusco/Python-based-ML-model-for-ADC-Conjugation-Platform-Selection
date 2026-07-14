@@ -1,146 +1,114 @@
-![Banner](bannerADC.png)
-# 🧪 Python-Based ML Model for ADC Conjugation Platform Selection
+# Python-based ML model for ADC conjugation-platform selection
 
-_A data-driven framework to evaluate antibody-drug conjugation (ADC) technologies using Python and machine learning._
+This repository contains an exploratory, proof-of-concept Python workflow for antibody-drug conjugate (ADC) conjugation-platform classification. The project was developed to study whether developability-oriented features could support a CMC-layer platform-selection question that is not directly addressed by most published ADC activity-prediction models.
 
-A curated guide and decision-support tool to aid scientists in selecting optimal conjugation strategies for antibody-drug conjugates (ADCs), including summaries of current technologies, platform comparisons, and use-case recommendations.
+Important limitation: the training dataset is synthetic and class-conditioned. The reported model performance describes behavior on a controlled benchmark, not validated performance for real ADC development programs. The literature-derived 20-ADC assessment is provided as a face-validity and transportability stress test, not external validation.
 
-# ADC Conjugation Technology Evaluation
+## What this repository includes
 
-## Overview
+- Recovery of the original 48-record synthetic ADC conjugation-platform dataset.
+- Exploratory data analysis notebooks.
+- Model benchmarking notebooks and scripts.
+- Additional reviewer-revision analyses:
+  - repeated and nested cross-validation;
+  - metrics beyond accuracy, including macro-F1, MCC, kappa, log loss, and Brier score;
+  - hold-out split seed sensitivity;
+  - redundant-feature ablation;
+  - leave-one-named-platform-out testing;
+  - literature-derived 20-ADC stress testing;
+  - feature-range / applicability-domain warnings.
+- Demonstration Gradio interface and serialized models for reproducing the synthetic benchmark workflow.
 
-This project evaluates Antibody-Drug Conjugate (ADC) conjugation technologies using synthetic and real-world datasets. The goal is to explore, analyze, and model ADC conjugation platforms to support informed technology selection and recommendation for ADC development.
+The code is intended for reproducibility, education, and methods development. It should not be used to choose an ADC conjugation platform for an experimental or industrial program without independent experimental validation.
 
----
+## Repository structure
 
-## Project Structure
+```text
+data/
+  adc_conjugation_synthetic_advanced.csv     Synthetic 48-record benchmark dataset
+  literature_validation_20.csv               Literature-derived 20-ADC stress-test table
+  synthetic_data_generator.ipynb             Original synthetic-data generator notebook
 
-| File / Notebook                      | Description                                                                                  |
-|------------------------------------|----------------------------------------------------------------------------------------------|
-| `adc_conjugation_synthetic_advanced.csv` | Synthetic dataset simulating various ADC conjugation platforms with realistic metrics.        |
-| `rf_adc_pipeline.pkl`               | Pretrained Random Forest model pipeline for ADC platform classification and recommendation. |
-| `01_data_exploration.ipynb`         | Exploratory data analysis notebook: statistics, visualization, platform comparison.          |
-| `02_model_selection.ipynb`          | Model training and evaluation: Logistic Regression, Random Forest, GBM; saves best model.    |
-| `03_platform_recommender.ipynb`     | Interactive platform recommender with Gradio UI using pretrained ML model and PDF reports.   |
-| `synthetic_data_generator.ipynb`    | Script generating the synthetic ADC conjugation dataset; used to validate notebooks and repo.|
+notebooks/
+  01_data_exploration.ipynb                  Exploratory analysis
+  02_model_selection.ipynb                   Original model training workflow
+  03_platform_recommender.ipynb              Demonstration interface workflow
 
----
+src/
+  revision_analysis.py                       Feature ablation and literature-compatibility audit
+  rigorous_model_audit.py                    Repeated/nested CV and model-quality audit
+  metric_quality_audit.py                    Metrics beyond accuracy and seed sensitivity
+  platform_group_validation.py               Leave-one-named-platform-out testing
+  validation_20_audit.py                     20-ADC literature stress-test analysis
 
-## About This Project
+models/
+  Serialized models used for reproducibility of the benchmark/demo workflow
 
-### Goal
+reports/
+  Tables, figures, JSON summaries, and revised manuscript-support analyses
+```
 
-- Explore and interpret ADC conjugation technology data  
-- Understand key attributes like Drug-to-Antibody Ratio (DAR), stability, homogeneity, manufacturability, and cost  
-- Train predictive models to recommend the optimal conjugation platform for an ADC candidate  
-- Provide a user-friendly tool with automated PDF reports for decision support  
+## Installation
 
-### Dataset Highlights
+Python 3.10 or newer is recommended.
 
-- Includes multiple conjugation platforms: Random, Site-Specific Non-Selective, and Site-Specific Selective  
-- Metrics cover DAR mean, DAR coefficient of variation, stability scores, homogeneity, expression ease, cost, manufacturability (scalability), and CMC risk  
-- Data simulates batch variations and is inspired by public ADC developer platforms (WuXi Biologics, Genentech, Seagen, etc.) and scientific literature (Antibody Therapeutics 2025)  
+```bash
+git clone https://github.com/camontefusco/Python-based-ML-model-for-ADC-Conjugation-Platform-Selection.git
+cd Python-based-ML-model-for-ADC-Conjugation-Platform-Selection
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements
+```
 
----
+## Reproducing the revision analyses
 
-## Reports
+Run the scripts from the repository root:
 
-- **adc_data_report.pdf**  
-  Generated by running `synthetic_data_generator.ipynb`. This report provides detailed exploratory analysis and validation of the synthetic ADC conjugation dataset, including correlation heatmaps, boxplots, violin plots, and interactive visualizations.
+```bash
+python src/rigorous_model_audit.py
+python src/metric_quality_audit.py
+python src/platform_group_validation.py
+python src/validation_20_audit.py
+python src/revision_analysis.py
+```
 
-- **adc_platform_report.pdf**  
-  Generated by running `03_platform_recommender.ipynb`. This report is an automated PDF summary of the recommended ADC conjugation platform for a given candidate, based on the pretrained ML model and input parameters.
+The scripts write CSV tables, figures, and JSON summaries under `reports/`.
 
----
+## Data
 
-## Usage
+The synthetic dataset contains 48 records: six named conjugation-platform archetypes with eight records per platform. Features include DAR summary metrics, homogeneity, stability, expression ease, scalability, and related development descriptors.
 
-### 1. Data Exploration
+The dataset was designed as a transparent benchmark for workflow development. It is not an industrial ADC dataset and does not capture all sources of experimental variability, assay noise, project-level dependence, failed programs, process history, payload effects, or organization-specific CMC constraints.
 
-Run `01_data_exploration.ipynb` to:
+The 20-ADC literature table is incomplete by design because public sources do not consistently report all features required by the synthetic model. It is therefore used only for constrained stress tests.
 
-- Load and validate the dataset  
-- Generate correlation heatmaps, boxplots, violin plots  
-- Visualize DAR mean vs. homogeneity with interactive Plotly scatterplots  
-- Generate an automated HTML and PDF report summarizing data insights  
+## Main revised results
 
-### 2. Model Training & Selection
+In one 10-record hold-out split, the Random Forest achieved perfect accuracy. Broader testing was more cautious:
 
-Use `02_model_selection.ipynb` to:
+- repeated cross-validation accuracy for the revised audit model was approximately 0.83;
+- macro-F1 was approximately 0.81;
+- leave-one-named-platform-out testing showed weak transfer between platform families;
+- removal of constructed redundant variables did not materially change internal performance;
+- the 20-ADC literature-derived assessment gave 4/20 agreement for a strict two-feature check and 16/20 agreement for a partly harmonized five-feature check.
 
-- Preprocess features and labels  
-- Train and evaluate multiple classification models (Logistic Regression, Random Forest, Gradient Boosting)  
-- Save the best performing model (`rf_adc_pipeline.pkl`)  
+These results support the workflow as a reproducible scaffold, not as a validated decision-support tool.
 
-### 3. Platform Recommendation
+## Models
 
-Launch `03_platform_recommender.ipynb` for:
+Serialized models are included only to reproduce the synthetic benchmark and demonstration interface. Model scores should be treated as uncalibrated. They are not probabilities suitable for ADC development decisions.
 
-- An interactive Gradio app that takes input parameters of ADC candidates  
-- Predicts the optimal conjugation platform using the pretrained model  
-- Generates and downloads the `adc_platform_report.pdf` detailing the recommendation and rationale  
+## Citation
 
-### 4. Generate & Validate Synthetic Data
+If you use this repository, please cite the GitHub repository and, once available, the associated manuscript.
 
-Run `synthetic_data_generator.ipynb` to:
-
-- Generate the synthetic ADC conjugation dataset (`adc_conjugation_synthetic_advanced.csv`)  
-- Validate dataset assumptions and notebook workflows  
-- Produce the comprehensive exploratory report `adc_data_report.pdf`  
-
----
-
-### 🔄 System Overview
-
-#### 1. 🧪 User Inputs (via Gradio)
-- Technology_Category  
-- DAR_Mean, DAR_Std, DAR_CV  
-- Stability_Score, Expression_Ease  
-- Homogeneity, Cost_Index  
-- CMC_Risk, Approved_Usage, Vendor  
-- Scalability, Latency_to_Clinic_yrs  
-
-#### 2. 🧹 Data Preprocessing (Pipeline in `.pkl`)
-- Convert categoricals to string  
-- One-hot / ordinal encoding  
-- Normalize and scale numerical values  
-
-#### 3. 🧠 Trained ML Model (Random Forest)
-- Trained on historical ADC project data  
-- Learns platform suitability from patterns  
-- Predicts platform label  
-
-#### 4. ✅ Output
-- Predicted Platform (e.g., "Lysine-Based")  
-- Displayed in Gradio interface  
-- Exported in downloadable PDF report  
-
----
-
-## Technologies Used
-- Python (pandas, numpy, scikit-learn)
-- Jupyter Notebooks
-- Plotly, Seaborn, Matplotlib for visualization
-- Gradio for interactive UI
-- pdfkit + wkhtmltopdf for report generation
-- Jinja2 templating
-
-## Contributing
-Contributions are welcome! Please open issues or submit pull requests for improvements, new features, or bug fixes.
+```text
+Montefusco-Pereira CA. Python-based ML model for ADC conjugation-platform selection. GitHub.
+https://github.com/camontefusco/Python-based-ML-model-for-ADC-Conjugation-Platform-Selection
+```
 
 ## Contact
-For questions or collaboration, please contact:
-Carlos Montefusco – cmontefusco@gmail.com
-Project Link: https://github.com/camontefusco/adc-conjugation-evaluation
 
----
+Carlos Montefusco-Pereira  
+GitHub: https://github.com/camontefusco
 
-## Credits & References
-
-- ADC technology data synthesized from public platform specs by WuXi Biologics, Synaffix, Genentech, Daiichi Sankyo, ImmunoGen, Seagen  
-- Literature references:  
-  - Antibody Therapeutics (2025) review, DAR pharmacokinetic variability studies  
-  - [Ab Therapeutics, Vol 8, Issue 2, Pages 157–176 (2025)](https://academic.oup.com/abt/article/8/2/157/8115463) — Comprehensive review on ADC conjugation technologies and clinical translation  
-- Open-source libraries: Pandas, Scikit-learn, Seaborn, Plotly, Gradio, pdfkit, Jinja2  
-
----
