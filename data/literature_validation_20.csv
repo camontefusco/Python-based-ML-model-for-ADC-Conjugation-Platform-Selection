@@ -1,0 +1,21 @@
+name,platform_category,dar_mean,dar_cv,stability_score,homogeneity_score,manufacturability,approved_status
+Gemtuzumab ozogamicin (Mylotarg),Random,2.5,0.45,2,2,3,Approved
+Brentuximab vedotin (Adcetris),Site-Specific Non-Selective,4.0,0.28,3,3,4,Approved
+Ado-trastuzumab emtansine (Kadcyla / T-DM1),Random,3.5,0.38,3,2,3,Approved
+Inotuzumab ozogamicin (Besponsa),Random,6.0,0.50,2,2,3,Approved
+Polatuzumab vedotin (Polivy),Site-Specific Non-Selective,3.5,0.30,3,3,4,Approved
+Enfortumab vedotin (Padcev),Site-Specific Non-Selective,3.8,0.29,3,3,4,Approved
+Sacituzumab govitecan (Trodelvy),Random,7.6,0.42,2,2,3,Approved
+Belantamab mafodotin (Blenrep),Site-Specific Non-Selective,4.0,0.32,4,3,4,Approved
+Trastuzumab deruxtecan (Enhertu / T-DXd),Site-Specific Non-Selective,8.0,0.15,4,4,4,Approved
+Loncastuximab tesirine (Zynlonta),Site-Specific Non-Selective,2.3,0.35,3,3,3,Approved
+Tisotumab vedotin (Tivdak),Site-Specific Non-Selective,4.0,0.28,3,3,4,Approved
+Mirvetuximab soravtansine (Elahere),Random,3.6,0.40,3,2,3,Approved
+Datopotamab deruxtecan (Dato-DXd),Site-Specific Non-Selective,4.0,0.18,4,4,4,Approved
+Patritumab deruxtecan (HER3-DXd),Site-Specific Non-Selective,8.0,0.16,4,4,4,Approved
+Telisotuzumab vedotin (Teliso-V),Site-Specific Non-Selective,3.1,0.30,3,3,4,Approved
+Zilovertamab vedotin (ZV),Site-Specific Non-Selective,4.0,0.30,3,3,4,Phase 3
+Upifitamab rilsodotin (UpRi),Site-Specific Selective,2.0,0.08,5,5,3,Phase 3
+SGN-B6A (ladiratuzumab vedotin variant),Site-Specific Non-Selective,3.5,0.28,3,3,4,Phase 2
+ADCT-601 (camidanlumab tesirine / Cami-T),Site-Specific Non-Selective,2.3,0.33,3,3,3,Phase 2
+XMT-1592 (upifitamab rilsodotin precursor),Site-Specific Selective,10.0,0.10,5,5,3,Phase 2

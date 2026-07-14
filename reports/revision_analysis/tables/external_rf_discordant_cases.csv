@@ -1,0 +1,5 @@
+name,platform_category,rf_predicted_category,rf_max_probability
+Gemtuzumab ozogamicin (Mylotarg),Random,Site-Specific Non-Selective,0.41
+Trastuzumab deruxtecan (Enhertu / T-DXd),Site-Specific Non-Selective,Site-Specific Selective,0.458
+Datopotamab deruxtecan (Dato-DXd),Site-Specific Non-Selective,Site-Specific Selective,0.458
+Patritumab deruxtecan (HER3-DXd),Site-Specific Non-Selective,Site-Specific Selective,0.458

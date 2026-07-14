@@ -1,0 +1,43 @@
+{
+  "validation_records": 20,
+  "objective_features": [
+    "DAR_Mean",
+    "DAR_CV"
+  ],
+  "harmonized_features": [
+    "DAR_Mean",
+    "DAR_CV",
+    "Stability_Score",
+    "Homogeneity",
+    "Scalability"
+  ],
+  "objective_rf": {
+    "feature_set": "objective",
+    "model": "Random Forest",
+    "features": "DAR_Mean; DAR_CV",
+    "correct": 4,
+    "total": 20,
+    "accuracy": 0.2,
+    "macro_f1": 0.15350877192982457,
+    "mcc": 0.04876657661113834,
+    "wilson_95_low": 0.08065766257979806,
+    "wilson_95_high": 0.4160174322518936
+  },
+  "harmonized_rf": {
+    "feature_set": "harmonized",
+    "model": "Random Forest",
+    "features": "DAR_Mean; DAR_CV; Stability_Score; Homogeneity; Scalability",
+    "correct": 16,
+    "total": 20,
+    "accuracy": 0.8,
+    "macro_f1": 0.7645502645502645,
+    "mcc": 0.6704295861132136,
+    "wilson_95_low": 0.5839825677481065,
+    "wilson_95_high": 0.9193423374202021
+  },
+  "objective_ood_records": 20,
+  "harmonized_ood_records": 20,
+  "objective_model_consensus_records": 6,
+  "harmonized_model_consensus_records": 7,
+  "required_statement": "This literature-derived analysis is a transportability and applicability-domain stress test, not definitive external validation. The source data are sparse, partly harmonized from qualitative scores, and frequently outside the synthetic training domain. Prospective validation using independently measured ADC development records remains required before practical use."
+}
