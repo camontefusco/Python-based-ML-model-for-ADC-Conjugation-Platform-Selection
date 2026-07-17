@@ -1,0 +1,145 @@
+model,held_out_platform,true_category,predicted_category,correct,category_absent_from_training
+Logistic regression,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,DXd Linker-Payload,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Random Forest,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,DXd Linker-Payload,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Extra Trees,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,DXd Linker-Payload,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Logistic regression,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Logistic regression,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Logistic regression,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Logistic regression,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Logistic regression,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Logistic regression,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Random Forest,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Random Forest,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Random Forest,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Random Forest,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Random Forest,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Random Forest,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Extra Trees,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Extra Trees,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Extra Trees,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Extra Trees,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Extra Trees,GlycoConnect™,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Selective,False,False
+Logistic regression,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Random Forest,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Extra Trees,Interchain Cysteine,Site-Specific Non-Selective,Site-Specific Non-Selective,True,False
+Logistic regression,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Logistic regression,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Logistic regression,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Logistic regression,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Logistic regression,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Logistic regression,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Logistic regression,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Logistic regression,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Random Forest,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Random Forest,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Random Forest,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Random Forest,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Random Forest,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Random Forest,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Random Forest,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Random Forest,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Extra Trees,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Extra Trees,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Extra Trees,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Extra Trees,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Extra Trees,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Extra Trees,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Extra Trees,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Extra Trees,Lysine-Based,Random,Site-Specific Non-Selective,False,True
+Logistic regression,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Random Forest,THIOMAB™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,THIOMAB™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,THIOMAB™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,THIOMAB™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Random Forest,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Random Forest,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Random Forest,THIOMAB™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Extra Trees,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Extra Trees,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Extra Trees,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Extra Trees,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Extra Trees,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Extra Trees,THIOMAB™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Extra Trees,THIOMAB™,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,WuXiDAR4™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,WuXiDAR4™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,WuXiDAR4™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Logistic regression,WuXiDAR4™,Site-Specific Selective,Site-Specific Non-Selective,False,False
+Logistic regression,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,WuXiDAR4™,Site-Specific Selective,Random,False,False
+Random Forest,WuXiDAR4™,Site-Specific Selective,Random,False,False
+Random Forest,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Random Forest,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False
+Extra Trees,WuXiDAR4™,Site-Specific Selective,Site-Specific Selective,True,False

@@ -1,0 +1,19 @@
+fold,held_out_platform,held_out_category,n_train,n_test,training_categories,held_out_category_absent_from_training,model,accuracy,macro_f1_observed_labels,mcc,most_common_prediction,n_unique_predictions
+0,DXd Linker-Payload,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Logistic regression,1.0,1.0,0.0,Site-Specific Selective,1
+0,DXd Linker-Payload,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Random Forest,0.875,0.4666666666666667,0.0,Site-Specific Selective,2
+0,DXd Linker-Payload,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Extra Trees,0.875,0.4666666666666667,0.0,Site-Specific Selective,2
+1,GlycoConnect™,Site-Specific Non-Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Logistic regression,0.125,0.1111111111111111,0.0,Site-Specific Selective,2
+1,GlycoConnect™,Site-Specific Non-Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Random Forest,0.375,0.2727272727272727,0.0,Site-Specific Selective,2
+1,GlycoConnect™,Site-Specific Non-Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Extra Trees,0.375,0.2727272727272727,0.0,Site-Specific Selective,2
+2,Interchain Cysteine,Site-Specific Non-Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Logistic regression,0.875,0.4666666666666667,0.0,Site-Specific Non-Selective,2
+2,Interchain Cysteine,Site-Specific Non-Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Random Forest,1.0,1.0,0.0,Site-Specific Non-Selective,1
+2,Interchain Cysteine,Site-Specific Non-Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Extra Trees,1.0,1.0,0.0,Site-Specific Non-Selective,1
+3,Lysine-Based,Random,40,8,Site-Specific Non-Selective; Site-Specific Selective,True,Logistic regression,0.0,0.0,0.0,Site-Specific Non-Selective,1
+3,Lysine-Based,Random,40,8,Site-Specific Non-Selective; Site-Specific Selective,True,Random Forest,0.0,0.0,0.0,Site-Specific Non-Selective,1
+3,Lysine-Based,Random,40,8,Site-Specific Non-Selective; Site-Specific Selective,True,Extra Trees,0.0,0.0,0.0,Site-Specific Non-Selective,1
+4,THIOMAB™,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Logistic regression,0.0,0.0,0.0,Site-Specific Non-Selective,1
+4,THIOMAB™,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Random Forest,0.625,0.38461538461538464,0.0,Site-Specific Selective,2
+4,THIOMAB™,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Extra Trees,0.125,0.1111111111111111,0.0,Site-Specific Non-Selective,2
+5,WuXiDAR4™,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Logistic regression,0.5,0.3333333333333333,0.0,Site-Specific Non-Selective,2
+5,WuXiDAR4™,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Random Forest,0.75,0.42857142857142855,0.0,Site-Specific Selective,2
+5,WuXiDAR4™,Site-Specific Selective,40,8,Random; Site-Specific Non-Selective; Site-Specific Selective,False,Extra Trees,1.0,1.0,0.0,Site-Specific Selective,1
