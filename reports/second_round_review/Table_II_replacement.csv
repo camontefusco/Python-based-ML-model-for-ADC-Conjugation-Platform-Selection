@@ -1,0 +1,9 @@
+Analysis,Feature set / model,Metric,Estimate,Uncertainty / comparison,Interpretation for manuscript
+Original internal hold-out split,Original 9-feature Random Forest,Accuracy,10/10 = 1.00,Wilson 95% CI 0.72-1.00,Perfect hold-out performance is compatible with substantial uncertainty because the test set contained only 10 synthetic records.
+Repeated stratified cross-validation,Random Forest,Accuracy,0.831,Empirical 95% interval 0.748-1.000,The mean estimate is lower than the original hold-out result and shows split dependence.
+Repeated stratified cross-validation,Random Forest,Macro F1,0.808,Calculated across 6 platform classes,Macro F1 avoids relying only on accuracy and is more appropriate for multiclass reporting.
+Nested cross-validation,Random Forest,Accuracy / macro F1,0.825 / 0.798,Inner model selection separated from outer testing,Results remain exploratory because all records are synthetic.
+Seed sensitivity of hold-out split,Random Forest,Accuracy,Mean 0.835; range 0.583-1.000,8/100 random splits were perfect,The original 1.00 result is not stable enough to be interpreted as generalization.
+Leave-one-platform-out stress test,Random Forest,Platform-transfer accuracy,0.000-1.000 depending on omitted platform,Lysine-Based fold fails because the Random category is absent from training,Ordinary row-level CV was optimistic and cross-platform extrapolation is weak.
+Redundant-feature ablation,Random Forest with 9, 8, or 7 features,Accuracy,0.846; 0.829; 0.833,Cost_Index removal and Cost_Index + DAR_Std removal gave similar performance,Redundant variables were not required for similar internal performance.
+Noise / perturbation stress test,Random Forest,Accuracy and macro F1 under simulated feature noise,Use existing noise-stress table and add feature-level perturbation if rerun is possible,Shows sensitivity to measurement variation; should be framed as synthetic stress testing rather than validation.
