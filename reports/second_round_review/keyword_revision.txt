@@ -1,0 +1,5 @@
+Recommended revised keywords for resubmission:
+
+Antibody-drug conjugates; conjugation platform; CMC developability; drug-to-antibody ratio; model validation; machine learning.
+
+Rationale: replace the generic keyword "Drug Development" with more specific terms that match the reviewers' focus and the manuscript's revised proof-of-concept positioning.
