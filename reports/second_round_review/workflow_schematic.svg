@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+  <defs>
+    <style>
+      .title { font: 700 38px Arial, sans-serif; fill: #111827; }
+      .box-title { font: 700 24px Arial, sans-serif; fill: #111827; }
+      .text { font: 20px Arial, sans-serif; fill: #1f2937; }
+      .small { font: 18px Arial, sans-serif; fill: #374151; }
+      .caution { font: 700 19px Arial, sans-serif; fill: #991b1b; }
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2.2; rx: 18; }
+      .blue { fill: #eff6ff; stroke: #2563eb; }
+      .green { fill: #ecfdf5; stroke: #16a34a; }
+      .orange { fill: #fff7ed; stroke: #ea580c; }
+      .red { fill: #fef2f2; stroke: #dc2626; }
+      .gray { fill: #f3f4f6; stroke: #6b7280; }
+      .arrow { stroke: #374151; stroke-width: 4; marker-end: url(#arrowhead); fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#374151" />
+    </marker>
+  </defs>
+
+  <rect width="1800" height="900" fill="white" />
+  <text x="900" y="65" text-anchor="middle" class="title">Computational workflow for the proof-of-concept ADC platform classifier</text>
+
+  <rect x="60" y="140" width="250" height="210" class="box orange" />
+  <text x="185" y="178" text-anchor="middle" class="box-title">1. CMC rationale</text>
+  <text x="85" y="220" class="text">Select ADC platform</text>
+  <text x="85" y="248" class="text">families and define</text>
+  <text x="85" y="276" class="text">synthetic feature ranges</text>
+  <text x="85" y="318" class="caution">Assumption-driven</text>
+
+  <rect x="380" y="140" width="270" height="210" class="box blue" />
+  <text x="515" y="178" text-anchor="middle" class="box-title">2. Synthetic data</text>
+  <text x="405" y="220" class="text">48 records</text>
+  <text x="405" y="248" class="text">6 platforms</text>
+  <text x="405" y="276" class="text">8 records/platform</text>
+  <text x="405" y="318" class="small">Nine numeric descriptors</text>
+
+  <rect x="720" y="140" width="280" height="210" class="box green" />
+  <text x="860" y="178" text-anchor="middle" class="box-title">3. Model fitting</text>
+  <text x="745" y="220" class="text">Numeric features only</text>
+  <text x="745" y="248" class="text">Target-revealing fields</text>
+  <text x="745" y="276" class="text">excluded</text>
+  <text x="745" y="318" class="small">Multimodel comparison</text>
+
+  <rect x="1070" y="140" width="300" height="210" class="box gray" />
+  <text x="1220" y="178" text-anchor="middle" class="box-title">4. Internal audit</text>
+  <text x="1095" y="220" class="text">Repeated / nested CV</text>
+  <text x="1095" y="248" class="text">Seed sensitivity</text>
+  <text x="1095" y="276" class="text">Leave-platform-out</text>
+  <text x="1095" y="304" class="text">Feature ablation</text>
+  <text x="1095" y="332" class="text">Perturbation stress test</text>
+
+  <rect x="1440" y="140" width="300" height="210" class="box red" />
+  <text x="1590" y="178" text-anchor="middle" class="box-title">5. Literature stress test</text>
+  <text x="1465" y="220" class="text">20 ADC programs</text>
+  <text x="1465" y="248" class="text">Strict 2-feature check</text>
+  <text x="1465" y="276" class="text">Harmonized 5-feature check</text>
+  <text x="1465" y="318" class="caution">Not external validation</text>
+
+  <path d="M310 245 H380" class="arrow" />
+  <path d="M650 245 H720" class="arrow" />
+  <path d="M1000 245 H1070" class="arrow" />
+  <path d="M1370 245 H1440" class="arrow" />
+
+  <rect x="260" y="520" width="420" height="220" class="box green" />
+  <text x="470" y="560" text-anchor="middle" class="box-title">Current intended use</text>
+  <text x="295" y="604" class="text">After early conjugation and</text>
+  <text x="295" y="632" class="text">analytical characterization</text>
+  <text x="295" y="674" class="text">Supports CMC discussion,</text>
+  <text x="295" y="702" class="text">documentation, and follow-up</text>
+  <text x="295" y="730" class="text">experiment prioritization</text>
+
+  <rect x="760" y="520" width="420" height="220" class="box red" />
+  <text x="970" y="560" text-anchor="middle" class="box-title">Current limitation</text>
+  <text x="795" y="604" class="text">Not a validated prospective</text>
+  <text x="795" y="632" class="text">pre-experimental selector</text>
+  <text x="795" y="674" class="text">Several inputs are measured</text>
+  <text x="795" y="702" class="text">only after early experiments</text>
+
+  <rect x="1260" y="520" width="420" height="220" class="box blue" />
+  <text x="1470" y="560" text-anchor="middle" class="box-title">Required future validation</text>
+  <text x="1295" y="604" class="text">Independent ADC records</text>
+  <text x="1295" y="632" class="text">Grouped batches by ADC</text>
+  <text x="1295" y="660" class="text">Locked external cohort</text>
+  <text x="1295" y="688" class="text">Prospective experimental test</text>
+  <text x="1295" y="716" class="text">Calibration before use</text>
+
+  <path d="M1590 350 C1590 430 470 430 470 520" class="arrow" />
+  <path d="M470 740 H760" class="arrow" />
+  <path d="M1180 630 H1260" class="arrow" />
+
+  <text x="900" y="840" text-anchor="middle" class="small">All outputs are proof-of-concept synthetic-data analyses unless independently validated with experimental or industrial ADC records.</text>
+</svg>
