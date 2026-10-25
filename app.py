@@ -1,6 +1,7 @@
 """Local Gradio demonstration for the synthetic ADC platform benchmark."""
 from pathlib import Path
 import datetime
+import os
 import joblib
 import pandas as pd
 import gradio as gr
@@ -67,4 +68,4 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
-    demo.launch(server_name="127.0.0.1", server_port=7860, share=False)
+    demo.launch(server_name="127.0.0.1", server_port=int(os.environ.get("GRADIO_SERVER_PORT", "7860")), share=False)
