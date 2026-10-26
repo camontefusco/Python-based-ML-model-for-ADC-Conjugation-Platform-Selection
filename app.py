@@ -8,6 +8,14 @@ import gradio as gr
 from fpdf import FPDF
 
 ROOT = Path(__file__).resolve().parent
+# The benchmark pipeline was serialized with scikit-learn 1.6.1.  Newer
+# releases removed this private helper class; restoring a compatible placeholder
+# keeps the bundled demonstration model loadable while requirements pin 1.6.1.
+import sklearn.compose._column_transformer as _column_transformer
+if not hasattr(_column_transformer, "_RemainderColsList"):
+    _column_transformer._RemainderColsList = type(
+        "_RemainderColsList", (list,), {}
+    )
 MODEL = joblib.load(ROOT / "models" / "rf_adc_pipeline.pkl")
 REPORT = ROOT / "reports" / "adc_platform_report_demo.pdf"
 
@@ -68,4 +76,8 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
-    demo.launch(server_name="127.0.0.1", server_port=int(os.environ.get("GRADIO_SERVER_PORT", "7860")), share=False)
+    demo.launch(
+        server_name=os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1"),
+        server_port=int(os.environ.get("GRADIO_SERVER_PORT", "7860")),
+        share=os.environ.get("GRADIO_SHARE", "0") == "1",
+    )
